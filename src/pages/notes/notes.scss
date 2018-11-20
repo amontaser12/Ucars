@@ -51,16 +51,7 @@ page-notes {
         width: 100%;
         height: 147px;
     }
-    // .right{
-    //     float: right;
-    // }
-    // ion-label{
-    //     text-align: center;
-    // }
-    // ion-item .color{
-    //     width: 70%;
-    //     height: 32px;
-    //     float: left;
+   float: left;
     // }
     ion-badge{
         position: absolute;
@@ -75,6 +66,9 @@ page-notes {
     ion-card img{
         width: auto;
         margin: auto;
+    }
+    ion-label{
+        text-align: center
     }
     .val{
         position: relative;
