@@ -1,0 +1,45 @@
+page-home {
+    ion-content , .content-md{
+        background-image: url('../../assets/imgs/Capture.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    h3{
+        color: #fff;
+    }
+    .item-1{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .item{
+        margin: auto;
+        text-align: center;
+        border: 2px solid gray;
+        border-radius: 50%;
+        width: 90px;
+        height: 90px;
+        color: gray;
+        // -webkit-filter: grayscale(100%) !important;
+        // filter: grayscale(100%) !important;
+    }
+    .item:hover{
+        color: #fff;
+        border-color: #fff;
+        transform: scale(1.1);
+    }
+    .item ion-icon{
+        line-height: 1.7;
+    }
+    .item p {
+        margin-top: 0px;
+    }
+    .item-2
+    {
+        width: 287px;
+        margin: auto;
+        position: relative;
+        bottom: 100px;
+    }
+}

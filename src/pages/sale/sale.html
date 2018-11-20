@@ -1,0 +1,58 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-navbar>
+            <button ion-button menuToggle>
+                <ion-icon name="menu" ></ion-icon>
+            </button>
+            <ion-title>متابعة طلب الشراء</ion-title>
+            <ion-buttons end>
+                <button (click)='cart()' ion-button icon-only color="royal">
+                    <ion-icon name="cart"><ion-badge item-end>1</ion-badge></ion-icon>
+                </button>
+            </ion-buttons>
+        </ion-navbar> 
+          
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-card>
+        <ion-card-header>
+            <h2>طلب شراء</h2>
+            <ion-icon name="close" (click)='popView()'></ion-icon>
+        </ion-card-header>
+        <ion-card-content>
+            <form action="">
+                <ion-item>
+                    <ion-input type="text" placeholder="اسم المستخدم"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="number" placeholder="رقم الجوال"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="text" placeholder="البريد الالكتروني"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="text" placeholder="نوع السيارة"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="text" placeholder="رقم اللوحة "></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="text" placeholder="لون السيارة الحالي"></ion-input>
+                </ion-item>
+                <div class="sale">
+                    <button  ion-button color="light" (click)='openPage()' >
+                     ارسال
+                    </button>
+                    <button class="btn" ion-button color="light" (click)="presentPopover()">
+                        طلب خصم من الادارة
+                    </button>
+                </div>    
+            </form>
+        </ion-card-content>
+    </ion-card> 
+
+</ion-content>
+      

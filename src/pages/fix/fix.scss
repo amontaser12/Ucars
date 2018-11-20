@@ -1,0 +1,103 @@
+page-fix {
+    ion-navbar ion-title{
+        text-align: center;
+        color: #fff;
+    }
+    .toolbar-title-md , .toolbar-title{
+        color: #fff;
+    }
+    ion-icon{
+        color: #fff;
+    }
+    ion-grid , ion-col{
+        padding: 0px !important;
+    }
+    ion-header .toolbar-background ,ion-header .toolbar-background-md{
+        background: #00000021 !important;
+    }
+    ion-card-header h2{
+        line-height: 3 !important;
+    }
+    .serv{
+        text-align: center;
+        color: #fff;
+        background: #211e1e;
+        height: 150px;
+    }
+    .serv h2{
+        box-sizing: border-box;
+        padding-top: 50px;
+        font-size: 2.4em;
+    }
+    .serv-1{
+        position: relative;
+        width: 100%;
+        height: 43px;
+    }
+    .serv:first-child{
+        margin-top: 75px;
+        margin-bottom: 25px;
+    }
+    .serv:last-child{
+        margin-top: 25px;
+        margin-bottom: 75px;
+    }
+    ion-content {
+        background: url('../../assets/imgs/3.PNG');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    ion-item{
+        margin: 10px 0px 15px !important;
+        color: #fff !important;
+        background: #211e1e !important;
+    }
+    ion-list{
+        width: 50% !important;
+        margin: auto !important;
+        text-align: center !important;
+    }
+    ion-item .color{
+        width: 70%;
+        height: 32px;
+        float: left;
+    }
+    ion-badge{
+        position: absolute;
+        top: 0px;
+        left: 25px;
+    }
+    ion-card{
+        position: absolute;
+        top: 10%;
+        left: 0;
+    }
+    .card-header{
+        padding: 0px;
+        text-align: center;
+        color: #fff;
+        background: #110f0f;
+    }
+    .back-button.show-back-button{
+        display: none !important;
+    }
+    .bar-button-menutoggle{
+        display: inline-block !important;
+    }
+    ion-card-content{
+        background: #191616;
+        padding: 50px 16px 30px !important;
+    }
+    ion-card-header  ion-icon{
+        color: #fff;
+        position: absolute;
+        left: 15px;
+        top: 8px;
+        background: rgba(0,0,0,0.5);
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        border-radius: 50%;
+        padding-top: 2px;
+    }  
+}

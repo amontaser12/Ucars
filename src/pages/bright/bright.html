@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-navbar>
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>تغليف كامل للسياره</ion-title>
+        <ion-buttons end>
+          <button (click)='cart()' ion-button icon-only color="royal">
+            <ion-icon name="cart" ><ion-badge item-end>1</ion-badge></ion-icon>
+          </button>
+        </ion-buttons>
+    </ion-navbar> 
+    
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content #popoverContent>
+  <ion-card>
+    <ion-card-header>
+      <h2>تغليف كامل لامع</h2>
+        <ion-icon name="arrow-back" (click)='popView()'></ion-icon>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list radio-group>
+        <ion-list-header>
+          اختر اللون
+          <ion-icon name="arrow-down"></ion-icon>
+        </ion-list-header> 
+        <ion-item [navPush]='pop'>
+          <ion-label>
+            اسود
+            <div style="background: #000;" class="color"></div>
+          </ion-label> 
+        </ion-item>
+       <ion-item [navPush]='pop'>
+          <ion-label>
+            احمر
+            <div style="background: red;" class="color"></div>
+          </ion-label>
+        </ion-item>
+        <ion-item [navPush]='pop'>
+          <ion-label>
+          رمادي
+            <div style="background: gray;" class="color"></div>
+          </ion-label>
+        </ion-item>
+        <ion-item [navPush]='pop'>
+          <ion-label>
+            لبني
+            <div style="background: aqua;" class="color"></div>
+          </ion-label>
+        </ion-item>
+        <ion-item [navPush]='pop'>
+          <ion-label>
+            بني
+            <div style="background: brown;" class="color"></div>
+          </ion-label>
+        </ion-item>
+        <ion-item [navPush]='pop'>
+          <ion-label>
+            ذهبي
+            <div style="background:  goldenrod;" class="color"></div>
+          </ion-label>
+        </ion-item>
+        <ion-item [navPush]='pop'>
+          <ion-label>
+            بنفسجي
+            <div style="background:purple;" class="color"></div>
+          </ion-label>
+        </ion-item>
+        <ion-item [navPush]='pop'>
+          <ion-label>
+          برتقالي
+            <div style="background: orange;" class="color"></div>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card> 
+
+</ion-content> 

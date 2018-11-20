@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-navbar>
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>تغليف كامل للسياره</ion-title>
+        <ion-buttons end>
+          <button (click)='cart()' ion-button icon-only color="royal">
+            <ion-icon name="cart"><ion-badge item-end>1</ion-badge></ion-icon>
+          </button>
+        </ion-buttons>
+    </ion-navbar> 
+    
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content>
+  <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->
+   <ion-card>
+    <ion-card-header>
+      <img src="../../assets/imgs/4.PNG" alt="">
+      <ion-icon name="close" (click)='popView()'></ion-icon>
+    </ion-card-header>
+    <ion-card-content>
+      <ul>
+        <li [navPush]='bright'>
+          تغليف كامل لامع
+        </li>
+        <li [navPush]='bright'>
+         تغليف كامل نصف لامع
+        </li>
+        <li [navPush]='bright'>
+          تغليف كامل مطفي
+        </li>
+        <li [navPush]='bright'>
+          تغليف كامل الوان خاصة
+        </li>
+      </ul> 
+    </ion-card-content>
+  </ion-card> 
+
+</ion-content>

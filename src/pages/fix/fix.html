@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-navbar>
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>الصيانة</ion-title>
+        <ion-buttons end>
+          <button (click)='cart()' ion-button icon-only color="royal">
+            <ion-icon name="cart" ><ion-badge item-end>1</ion-badge></ion-icon>
+          </button>
+        </ion-buttons>
+    </ion-navbar> 
+    
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content #popoverContent>
+  <ion-card>
+    <ion-card-header>
+      <div class="serv-1">
+        <ion-icon name="close" (click)='popView()'></ion-icon>
+      </div>  
+    </ion-card-header>
+    <ion-card-content>
+      <div class="serv" (click)='open()'>
+        <h2>داخل الضمان</h2>
+      </div>
+      <div class="serv" (click)='openPage()'>
+        <h2>
+          خارج الضمان
+        </h2>
+        </div>
+    </ion-card-content>
+  </ion-card> 
+
+</ion-content> 

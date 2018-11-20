@@ -1,0 +1,22 @@
+<ion-content #myPopover padding >
+
+  <div #popoverText>
+    <div class="sub">
+      <h2>عزيزي العميل</h2>
+      <p>يمكنك طلب خصم من الادارة اذا كنت من عملائنا الدائمين فإذا كانت هذه هي المرة الاولي لك معنا يمكنك لاحقا الاستفادة من الخصم في طلباتك اللاحقة</p>
+    </div>
+    <div class="butn">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-6>
+            <button (click)='presentPopover()' (click)='close()'>متابعة طلب الخصم</button>
+          </ion-col>
+          <ion-col col-6>
+            <button (click)='close()'>الغاء</button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+
+</ion-content>

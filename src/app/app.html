@@ -1,0 +1,26 @@
+<ion-menu  [content]="content" id='navRight' side='right'>
+
+  <ion-content>
+    <div class="menu-1">
+      <div class="menu-2">
+        <img src="../assets/imgs/ucars1.png" alt="">
+        <ion-list>
+          <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+            <img src="{{p.img}}" alt="" style=" padding-left:40px">{{p.title}} 
+          </button>
+          
+        </ion-list>
+      </div>
+    </div>
+    <div class="rights">
+      <div class="rights-1">
+          ALL RIGHTS RESERVED TO UCARS 2018
+      </div>
+    </div>
+    
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

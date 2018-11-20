@@ -1,0 +1,126 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-navbar>
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>تغليف كامل للسياره</ion-title>
+        <ion-buttons end>
+          <button (click)='cart()' ion-button icon-only color="royal">
+            <ion-icon name="cart"><ion-badge item-end>1</ion-badge></ion-icon>
+          </button>
+        </ion-buttons>
+    </ion-navbar> 
+    
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content >
+  <ion-card>
+    <ion-card-header>
+      <h2>تغليف كامل لامع</h2>
+        <ion-icon name="arrow-back" (click)='popView()'></ion-icon>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>ذهبي</ion-label>
+        </ion-item>
+        <div class="val">
+          <img src="../../assets/imgs/8.png" alt="">
+          <ion-icon name="checkmark" class="ucar"></ion-icon>
+          <div class="fix-1">
+            <div class="fix">
+              <h2>UA563</h2>
+            </div>
+          </div> 
+        </div>
+      </ion-list>
+      
+      <ion-list>
+        <ion-item>
+          <ion-label>اختر فئة سيارتك</ion-label>
+          <ion-select [(ngModel)]="gam" interface="popover">
+            <ion-option [value]="selection" *ngFor="let v of select">{{v.title}} </ion-option>   
+          </ion-select> 
+        </ion-item>
+        <div class="main">
+          <ion-grid>
+            <ion-row>
+              <ion-col col-4>
+                <div>
+                  مدة الضمان
+                </div>
+              </ion-col>
+              <ion-col col-8>
+                <div class="right">
+                  4سنوات
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-4>
+                <div>
+                  الازالة المجانية
+                </div>
+              </ion-col>
+              <ion-col col-8>
+                <div class="right">
+                  ازالة مجانية خلال مدة الضمان  
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+             <ion-col col-4>
+                <div>
+                  الإشتراطات   
+                </div>
+              </ion-col>
+              <ion-col col-8>
+                <div class="right">
+                  يشترط خلو البدي من الرش
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-4>
+                <div>
+                  الوصف
+                </div>
+              </ion-col>
+              <ion-col col-8>
+                <div class="right">
+                  يحمي البدي الاساسي لسياراتك
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>  
+        </div>
+        <ion-item>
+          <ion-label>خدمات اضافية مجانية</ion-label>
+          <ion-select [(ngModel)]="gaming" interface="popover">
+            <ion-option #coc [value]="b.val"  *ngFor="let b of selected">{{b.title}}</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-list> 
+      <form action="">
+        <ion-textarea name="comment" rows="8" placeholder="قم بكتابة ملاحظاتك هنا" form="usrform">Enter text here...</ion-textarea>
+        <div class="btn">
+          <button ion-button color="light" (click)='open()' >
+            اضف للسلة
+          </button>
+        </div>
+      </form>
+      
+    </ion-card-content>
+  </ion-card> 
+
+</ion-content> 
+
+<!-- 
+// selc(){
+  //   this.elseTemplateClick = false;
+  //    this.TemplateClick = true;
+    
+  // } -->

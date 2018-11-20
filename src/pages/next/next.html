@@ -1,0 +1,15 @@
+<ion-content #myPopover padding >
+
+    <div #popoverText>
+        <div class="sub">
+            <h2>عزيزي العميل</h2>
+            <p>توجد بعض الخدمات غير مسعرة وسوف يتم تسيرها من قبل الادارة,عند استكمال بياناتك وارسال الطلب سيظهر لك رقم الطلب يمكنك مراجعة الادارة بهذا الطلب</p>
+        </div>
+        <div class="main">
+            <button ion-button (click)='openPage()' [navPush]='sale'>
+             متابعة الطلب
+            </button>
+        </div>
+    </div>
+      
+</ion-content>

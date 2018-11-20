@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-navbar>
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>تغليف كامل للسياره</ion-title>
+        <ion-buttons end>
+          <button (click)='cart()' ion-button icon-only color="royal">
+            <ion-icon name="cart"><ion-badge item-end>1</ion-badge></ion-icon>
+          </button>
+        </ion-buttons>
+    </ion-navbar> 
+    
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <div>
+        <img src="../../assets/imgs/6.PNG" alt="">
+        <ion-icon name="close" (click)='popView()' class="ucar" ></ion-icon>
+        <ion-icon name="checkmark" (click)='View()' class="ucar-1" ></ion-icon>
+      </div>
+      <div class="fix-1">
+        <div class="fix">
+          <h2>UA563</h2>
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card> 
+</ion-content>

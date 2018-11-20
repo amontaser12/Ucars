@@ -1,0 +1,24 @@
+page-next {
+    ion-content{
+        background-color: #191616 !important;
+        padding-bottom: 10px !important;
+    }
+    .scroll-content{
+        padding-bottom: 0px !important;
+    }
+    .sub{
+        background: #211e1e;
+        text-align: center;
+        color: #fff;
+        padding: 10px;
+    }
+    .main{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .main button{
+        width: 35%;
+        background-color: #f6efe0;
+        color: #000;
+    }
+}

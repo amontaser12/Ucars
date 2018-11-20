@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-navbar>
+            <button ion-button menuToggle>
+                <ion-icon name="menu" ></ion-icon>
+            </button>
+            <ion-title>تواصل معنا</ion-title>
+            <ion-buttons end>
+                <button (click)='cart()' ion-button icon-only color="royal">
+                    <ion-icon name="cart" ><ion-badge item-end>1</ion-badge></ion-icon>
+                </button>
+            </ion-buttons>
+        </ion-navbar> 
+          
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-card>
+        <ion-card-header>
+            <ion-icon name="person"></ion-icon>
+            <h2>تواصل معنا</h2>
+            <!-- <ion-icon name="person"></ion-icon> -->
+        </ion-card-header>
+        <ion-card-content>
+            <form action="">
+                <ion-item>
+                    <ion-input type="text" placeholder="اسم المستخدم"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="number" placeholder="رقم الجوال"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="text" placeholder="البريد الالكتروني"></ion-input>
+                </ion-item>
+                <ion-textarea name="comment" rows="8" placeholder="قم بكتابة رسالتك هنا" form="usrform">Enter text here...</ion-textarea>
+                <div class="sale">
+                    <button  ion-button color="light" (click)='openPage()' >
+                     ارسال
+                    </button>
+                </div>    
+            </form>
+        </ion-card-content>
+    </ion-card> 
+
+</ion-content>
+      
